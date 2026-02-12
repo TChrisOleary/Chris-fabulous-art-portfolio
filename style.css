@@ -1,0 +1,167 @@
+/*Global Styles*/
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: white;
+}
+main {
+    padding: 20px;
+}
+main h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 28px;
+} 
+/*Header and Navigation*/
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(170, 88, 88);
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+/*Home Page Image*/
+
+.myimage {
+    max-width: 100%;
+    text-align: center;
+    margin: 20px auto;
+}
+.myimage img {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+/*Gallery Page*/
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+  max-width: 1200px;
+  margin: 0 auto; 
+  padding: 40px 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-height: 250px; 
+  object-fit: cover;
+}
+.artwork figcaption {
+    color: white; 
+    text-align: center; 
+    margin-top: 8px; 
+    font-size: 16px; 
+    font-weight: 600;
+}
+/*About Page*/
+
+.about-section {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.about-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    flex-shrink: 0  ;
+}
+.about-section h1,
+.about-section h2 {
+    color: white;
+    margin-bottom: 30px;
+}
+.about-section p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+.about-content img {
+    width: 220px;
+}
+.about-text {
+    flex: 1;
+    text-align: left;
+    max-width: 700px;
+}
+/* Contact Page */
+
+.contact {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.email-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 250px;
+    margin: 30px auto 0;
+    padding: 15px;
+    gap: 15px;
+    background-color: #111;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.email-box input,
+.email-box button {
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+}
+
+.email-box input {
+    background-color: #222;
+    color: white;
+}
+
+.email-box button {
+    background-color: rgb(170, 88, 88);
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.email-box button:hover {
+    background-color: rgb(150, 70, 70);
+}
